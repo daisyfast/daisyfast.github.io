@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="fade">Welcome,</div>
+        <div class="mainbodygreen">
+            <button>dawg</button>
+        </div>
+    </body>
+
+    <script>
+        function fadein() {
+            var text = document.getElementById("fade");
+            var elements = [ "to a page", "all about ME"];
+            for (let i = 0; i < 2; i++) {
+                $('#fade').animate({'opacity': 0}, 2000, function () {
+                    $(this).text(elements[i]);
+                    }).animate({'opacity': 1}, 2000);
+
+            }
+            $('#fade').animate({'opacity': 0}, 2000)
+            return true;
+        }
+
+        let yes = window.addEventListener("load", fadein);
+
+    </script>
+
+</html>
