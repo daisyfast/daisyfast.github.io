@@ -1,0 +1,41 @@
+body {
+    background-color: #000000;
+}
+
+
+#fade {
+    font-size: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.mainbody{
+    position: absolute;
+    top: 40px; /* Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 100%;
+    color: white;
+
+}
+
+.mainbodygreen {
+    position: absolute;
+    top: 40px; /* Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 100%;
+    color: white;
+    background-color: green;
+    animation-name: fadeinout;
+    opacity: 0;
+    animation-delay: 10s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinout {
+    from { opacity: 0; }
+    to { opacity: 1;}
+  }
